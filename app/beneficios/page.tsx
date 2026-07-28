@@ -1,9 +1,9 @@
-import Navbar from "@/components/layout/Navibar";
+import Navbar from "../../components/Navibar";
 
 export default function Benefits() {
   return (
     <section className="bg-zinc-950">
-      <Navbar />
+        <Navbar/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título */}
         <div className="text-center mb-14">
@@ -22,7 +22,9 @@ export default function Benefits() {
           <div className="bg-zinc-900 border border-yellow-400 rounded-2xl p-6 shadow-lg">
             <div className="flex items-center gap-3 mb-5">
               <span className="text-3xl">💰</span>
-              <h3 className="text-2xl font-bold text-white">Financiamento</h3>
+              <h3 className="text-2xl font-bold text-white">
+                Financiamento
+              </h3>
             </div>
 
             <div className="text-zinc-400 space-y-1 mb-6">
@@ -70,7 +72,9 @@ export default function Benefits() {
           <div className="bg-zinc-900 border border-yellow-400 rounded-2xl p-6 shadow-lg">
             <div className="flex items-center gap-3 mb-5">
               <span className="text-3xl">📚</span>
-              <h3 className="text-2xl font-bold text-white">Biblioteca</h3>
+              <h3 className="text-2xl font-bold text-white">
+                Biblioteca
+              </h3>
             </div>
 
             <div className="text-zinc-400 space-y-1 mb-6">

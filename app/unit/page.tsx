@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Navbar from "@/components/layout/Navibar";
+import Navbar from "../../components/Navibar";
 
 const units = [
   {
@@ -89,20 +89,14 @@ export default function Unit() {
                             key={s.label}
                             className="bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-center"
                           >
-                            <p className="text-zinc-500 text-xs mb-1">
-                              {s.label}
-                            </p>
-                            <p className="text-yellow-400 text-2xl font-bold">
-                              {s.value}
-                            </p>
+                            <p className="text-zinc-500 text-xs mb-1">{s.label}</p>
+                            <p className="text-yellow-400 text-2xl font-bold">{s.value}</p>
                           </div>
                         ))}
                       </div>
 
                       <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-4">
-                        <p className="text-zinc-500 text-xs mb-3">
-                          Ocupação atual
-                        </p>
+                        <p className="text-zinc-500 text-xs mb-3">Ocupação atual</p>
                         <div className="bg-zinc-800 rounded-full h-2 overflow-hidden">
                           <div
                             className="bg-yellow-400 h-full rounded-full transition-all"
@@ -123,9 +117,7 @@ export default function Unit() {
                     </div>
 
                     <div className="w-full md:w-80 shrink-0">
-                      <p className="text-zinc-500 text-xs mb-2">
-                        📍 Localização
-                      </p>
+                      <p className="text-zinc-500 text-xs mb-2">📍 Localização</p>
                       <div className="rounded-xl overflow-hidden border border-zinc-800 h-56">
                         <iframe
                           src={mapSrc}

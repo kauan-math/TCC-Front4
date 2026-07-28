@@ -1,24 +1,15 @@
-import Navbar from "@/components/layout/Navibar";
-import Hero from "@/components/landing/Hero";
-import Benefits from "@/components/landing/Benefits";
-import HowItWorks from "@/components/landing/WowItWorks";
-import Plans from "@/components/landing/Plans";
-import Footer from "@/components/landing/Footer";
-
+import Navbar from "../components/Navibar";
+import Hero from "./hero";
+import Plans from "./plans/page";
+import Footer from "./footer";
+ 
 export default function HomePage() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-black">
+    <main className="">
       <Navbar />
-
       <Hero />
-
-      <Benefits />
-
-      <HowItWorks />
-
       <Plans />
-
       <Footer />
-    </main>
+</main>
   );
 }
